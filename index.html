@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto complete</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="./index.js"></script>
+</head>
+
+<body onclick="hiddeResult()">
+    <div class="myArray">
+        <p class="array">
+            try to write elements from this array [
+            <span style="color:rgb(0, 183, 255)">aaa </span>,
+            <span style="color:rgb(0, 183, 255)">bbb</span> ,
+            <span style="color:rgb(0, 183, 255)">ccc</span>,
+            <span style="color:rgb(0, 183, 255)">aaa bbb</span>,
+            <span style="color:rgb(0, 183, 255)">aaa ccc</span> ,
+            <span style="color:rgb(0, 183, 255)">aaa bbb ccc</span>,
+            <span style="color:rgb(0, 183, 255)">abc</span>,
+            <span style="color:rgb(0, 183, 255)">aaee</span> ]
+        </p>
+        <p class="examples">
+            example try :
+            <span style="color:rgb(0, 183, 255)">ee</span> or
+            <span style="color:rgb(0, 183, 255)">ae</span>
+        </p>
+    </div>
+    <nav>
+        <form action="#" method="get" id="form">
+            <input oninput="AutoComplete(this)" id="searchBox" class="searchBox" placeholder="write something" autocomplete="off" />
+            <button class="startSearch">
+                      search
+            </button>
+            <div id="getResults" class="getResults"></div>
+        </form>
+    </nav>
+
+</body>
+
+</html>
